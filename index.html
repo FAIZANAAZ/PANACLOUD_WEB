@@ -79,7 +79,7 @@
     }
 
     .navlist a {
-      font-size: 17px;
+ 
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
       text-decoration: none;
@@ -123,48 +123,48 @@
 <body class="w-[100%]">
 
 
-  <header class="header w-[100%] h-[139px] ">
-    <div id="topdiv" class="flex items-center justify-between h-[52px] w-[100%] bg-[#212121]">
-      <div id="iconsdiv" class="w-[220px] h-[100%] flex items-center gap-[5px] pl-[29px]">
-        <div class="icons shadow w-[30px] h-[30px] rounded-[50%] bg-[#303030]">
+  <header class="header w-[100%] md:h-[139px] h-[100px] ">
+    <div id="topdiv" class="flex  items-center justify-between lg:h-[52px]  w-[100%] bg-[#212121]">
+      <div id="iconsdiv" class="w-[220px] h-[100%] flex items-center md:gap-[5px] sm:pl-[29px] pl-[20px] gap-2">
+        <div class="icons shadow sm:h-[20px] w-[20px] md:w-[30px] h-[30px] rounded-[50%] sm:bg-[#303030] ">
           <box-icon name="facebook" type="logo" color="#ffffff"></box-icon>
         </div>
-        <div class="icons shadow w-[30px] h-[30px] rounded-[50%] bg-[#303030]">
+        <div class="icons shadow sm:h-[20px] w-[20px] md:w-[30px] h-[30px] rounded-[50%] sm:bg-[#303030] ">
           <box-icon name="gmail" type="logo" color="#ffffff"></box-icon>
         </div>
-        <div class="icons shadow w-[30px] h-[30px] rounded-[50%] bg-[#303030]">
+        <div class="icons shadow sm:h-[20px] w-[20px] md:w-[30px] h-[30px] rounded-[50%] sm:bg-[#303030] ">
           <box-icon name="twitter" type="logo" color="#ffffff"></box-icon>
         </div>
-        <div class="icons shadow w-[30px] h-[30px] rounded-[50%] bg-[#303030]">
+        <div class="icons shadow sm:h-[20px] w-[20px] md:w-[30px] h-[30px] rounded-[50%] sm:bg-[#303030] ">
           <box-icon name="linkedin" type="logo" color="#ffffff"></box-icon>
         </div>
-        <div class="icons shadow w-[30px] h-[30px] rounded-[50%] bg-[#303030]">
+        <div class="icons shadow sm:h-[20px] w-[20px] md:w-[30px] h-[30px] rounded-[50%] sm:bg-[#303030] ">
           <box-icon name="youtube" type="logo" rotate="180" color="#ffffff"></box-icon>
         </div>
       </div>
 
-      <div id="contactdiv" class="w-[542px] h-[100%] flex items-center">
-        <box-icon name="phone" type="solid" rotate="270" color="#8ec63e"></box-icon>
-        <p class="text-white font-bold text-[20px] tracking-tight">
+      <div id="contactdiv" class="w-[542px] h-[100%] flex items-center justify-evenly" >
+        <box-icon name="phone" type="solid" rotate="270" color="#8ec63e" class=" hidden  sm:block"></box-icon>
+        <p class="text-white hidden sm:block font-bold   text-[10px] md:text-[20px] sm:text-[15px] tracking-tight">
           +92(304)386-6719
         </p>
-        <box-icon name="phone" type="solid" rotate="270" color="#8ec63e" class="ml-[5px]"></box-icon>
-        <p class="text-white font-bold text-[20px] tracking-tight">
+        <box-icon name="phone" type="solid" rotate="270" color="#8ec63e" class="ml-[5px]  hidden  sm:block"></box-icon>
+        <p class="text-white  hidden  sm:block font-bold text-[10px] md:text-[20px] sm:text-[15px] tracking-tight">
           +92(317)001-3001
         </p>
 
         <button
-          class="bg-[#a2d84c] hover:bg-[#9af061] callbtn ml-[20px] py-[5px] px-[14px] mb-[3px] text-[12px] font-bold rounded-sm">
+          class="bg-[#a2d84c] hover:bg-[#9af061] callbtn ml-[40px] md:ml-[20px]  py-[5px] px-[14px] text-[8px]  sm:px[10px]  mb-[3px]  font-bold rounded-sm">
           CALL ME BACK
         </button>
       </div>
     </div>
-    <!-- bg-[#fbf9fd] -->
-    <div class="buttomdiv bg-white w-[100%] h-[83px] flex justify-between px-[23px] mt-[4px]">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7O6KnC3fP-ubHnwxlgmdvOfdwUp5FgSjCw&s" alt="" />
+    <!--  -->
+    <div class="buttomdiv bg-white  w-[100%] h-[83px] gap-x-[60px] sm:gap-x-[20px] lg:gap-0 flex justify-between md:px-[23px]   mt-[4px] ">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB7O6KnC3fP-ubHnwxlgmdvOfdwUp5FgSjCw&s" alt="" class="hidden sm:block" />
 
       <!-- buttom div -->
-      <ul class="h-[100%] lastdivul w-[867px]  flex items-center  gap-[22px]">
+       <ul class="h-[100%] lastdivul w-[867px] text-[13px] md:text-[13px] lg:text-[17px]  flex   items-center md:gap-x-[20px] sm:gap-x-[10px] sm:text-[10px] lg:gap-x-[22px] gap-3 justify-center sm:justify-end font-extrabold sm:font-bold">
         <li class="navlist ">
           <a href="#">WHY US</a>
         </li>
@@ -181,26 +181,26 @@
           <a href="#">PORTFOLIO</a>
         </li>
 
-        <li class="navlist">
+        <li class="navlist hidden sm:block">
           <a href="#">PROCESS</a>
         </li>
 
-        <li class="navlist">
+        <li class="navlist hidden sm:block">
           <a href="#">REVIEWS</a>
         </li>
 
-        <li class="navlist">
+        <li class="navlist hidden sm:block">
           <a href="#">OUR SKILLS</a>
         </li>
 
-        <li class="navlist">
+        <li class="navlist hidden sm:block">
           <a href="#">CONTACT US</a>
         </li>
       </ul>
-    </div>
+    </div> 
   </header>
 
-  <div class="slidrimgdiv w-[100%] h-[520px]">
+  <div class="slidrimgdiv w-[100%] md:h-[520px] h-[320px]"> 
     <!-- Swiper-->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -208,20 +208,20 @@
           <img src="WhatsApp Image 2024-10-23 at 8.20.12 PM.jpeg" class="h-[524px]" />
 
           <div class="absolute top-0 left-0 w-[100%] h-[100%] flex flex-col items-center justify-center text-white">
-            <div class="flex justify-between items-center mb-[120px] h-[70px] w-[100%]">
-              <div class="w-[450px] h-[60px] bg-[#a2d84c]"></div>
-              <h1 class="text-[55px] font-semibold">WE ARE EXPERTS</h1>
-              <div class="w-[450px] h-[60px] bg-[#a2d84c]"></div>
+            <div class="flex md:justify-between justify-center items-center mb-[120px] h-[70px] w-[100%]">
+              <div class="lg:w-[450px] md:w-[250px] hidden md:block h-[60px] bg-[#a2d84c]"></div>
+              <h1 class="lg:text-[50px] md:text-[35px] text-center text-[30px] sm:text-[50px]  font-semibold">WE ARE EXPERTS</h1>
+              <div class="lg:w-[450px] md:w-[250px] hidden md:block h-[60px] bg-[#a2d84c]"></div>
             </div>
 
-            <p class="absolute top-[270px] leading-[15px] font-normal">
+            <p class="absolute md:top-[270px] top-[200px] text-[10px] text-center leading-[8px] md:leading-[15px] font-normal">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Molestias velit our website <br />&nbsp; &nbsp; &nbsp;
               &nbsp;aspernatur nemo? Fugit suscipit iusto recusandae doloribus
               voluptates
             </p>
             <button
-              class="absolute top-[340px] h-[40px] w-[150px] bg-[#fdb808] shadow-xl text-black font-bold  border-solid border-b-[2px] rounded-[3px] border-[#dd8604] hover:bg-[#fe831d]">
+              class="absolute md:top-[340px] top-[270px] h-[40px] w-[150px] bg-[#fdb808] shadow-xl text-black font-bold  border-solid border-b-[2px] rounded-[3px] border-[#dd8604] hover:bg-[#fe831d]">
               READ MORE
             </button>
           </div>
@@ -233,283 +233,269 @@
             class="h-[100%] w-[100%]" />
         </div>
         <div class="swiper-slide w-[100%] h-[520px]">
-          <img src="pexels-googledeepmind-17485708.jpg" />
+          <img src="pexels-googledeepmind-17485708.jpg"   class="h-[100%] w-[100%]"/>
         </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
-  </div>
+  </div> 
 
   <!-- sec2 -->
   <!-- topdiv -->
-  <div id="sec2" class="h-[496px]">
-    <div class="adv-top pt-[50px] h-[140px] flex flex-col justify-center items-center">
-      <h1 class="text-[46px] font-bold text-[#668e18] relative bottom-7 right-1">
-        <span class="text-black"> OUR</span> ADVANTAGES
-      </h1>
-      <pre class="mb-[15px] font-semibold text-[#b8bfcc] relative bottom-4 right-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam  
-        <span class="relative top-[15px]"> nobis facere harum maxime asperiores alias quos </span></pre>
+  <div id="sec2" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+    <div class="adv-top text-center mb-8 lg:mb-12">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">
+            <span class="text-black">OUR</span> <span class="text-[#668e18]">ADVANTAGES</span>
+        </h1>
+        <pre class="font-semibold text-[#b8bfcc] text-sm lg:text-base whitespace-pre-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam 
+nobis facere harum maxime asperiores alias quos</pre>
     </div>
 
     <!-- bottom icons -->
-    <div class="bottomdiv w-[100%] h-[263px] mt-[36px] flex justify-evenly">
-      <div class="iconsdiv h-[100%] w-[215px] text-center">
-        <div
-          class="rounddiv shadown flex justify-center items-center w-[172px] h-[172px] bg-[#f2f2f2] rounded-[50%] m-[auto]">
-          <img src="bulb.png" alt="" />
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+        <div class="text-center">
+            <div class="rounded-full bg-[#f2f2f2] w-36 h-36 lg:w-44 lg:h-44 mx-auto flex items-center justify-center shadow-lg">
+                <img src="bulb.png" alt="Innovation" class="w-16 h-16 lg:w-20 lg:h-20" />
+            </div>
+            <h2 class="font-bold text-lg mt-4 mb-2">INNOVATION</h2>
+            <p class="font-semibold text-sm leading-tight text-[#b8bfcc]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
+                laboriosam minima
+            </p>
         </div>
-        <h1 class="font-bold text-[18px] mt-[5px] text-center">INNOVATION</h1>
-        <p class="font-semibold leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
-          laboriosam minima
-        </p>
-      </div>
 
-      <div class="iconsdiv  h-[100%] w-[215px] text-center">
-        <div
-          class="rounddiv shadown flex justify-center items-center w-[170px] h-[170px] bg-[#f2f2f2] rounded-[50%] m-[auto]">
-          <img src="like.png" alt="" />
+        <div class="text-center">
+            <div class="rounded-full bg-[#f2f2f2] w-36 h-36 lg:w-44 lg:h-44 mx-auto flex items-center justify-center shadow-lg">
+                <img src="like.png" alt="Quality" class="w-16 h-16 lg:w-20 lg:h-20" />
+            </div>
+            <h2 class="font-bold text-lg mt-4 mb-2">QUALITY</h2>
+            <p class="font-semibold text-sm leading-tight text-[#b8bfcc]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
+                laboriosam minima
+            </p>
         </div>
-        <h1 class="font-bold text-[18px] mt-[5px] text-center">QUALITY</h1>
-        <p class="font-semibold leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
-          laboriosam minima
-        </p>
-      </div>
 
-      <div class="iconsdiv h-[100%] w-[215px] \ text-center">
-        <div
-          class="rounddiv shadown flex justify-center items-center w-[170px] h-[170px] bg-[#f2f2f2] rounded-[50%] m-[auto]">
-          <img src="clock.png" alt="" />
+        <div class="text-center">
+            <div class="rounded-full bg-[#f2f2f2] w-36 h-36 lg:w-44 lg:h-44 mx-auto flex items-center justify-center shadow-lg">
+                <img src="clock.png" alt="Experience" class="w-16 h-16 lg:w-20 lg:h-20" />
+            </div>
+            <h2 class="font-bold text-lg mt-4 mb-2">EXPERIENCE</h2>
+            <p class="font-semibold text-sm leading-tight text-[#b8bfcc]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
+                laboriosam minima
+            </p>
         </div>
-        <h1 class="font-bold text-[18px] mt-[5px] text-center">EXPERIENCE</h1>
-        <p class="font-semibold leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
-          laboriosam minima
-        </p>
-      </div>
 
-      <div class="iconsdiv h-[100%] w-[215px] text-center">
-        <div
-          class="rounddiv shadown flex justify-center items-center w-[170px] h-[170px] bg-[#f2f2f2] rounded-[50%] m-[auto]">
-          <img src="peoples.png" alt="" />
+        <div class="text-center">
+            <div class="rounded-full bg-[#f2f2f2] w-36 h-36 lg:w-44 lg:h-44 mx-auto flex items-center justify-center shadow-lg">
+                <img src="peoples.png" alt="Happy Clients" class="w-16 h-16 lg:w-20 lg:h-20" />
+            </div>
+            <h2 class="font-bold text-lg mt-4 mb-2">HAPPY CLIENTS</h2>
+            <p class="font-semibold text-sm leading-tight text-[#b8bfcc]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
+                laboriosam minima
+            </p>
         </div>
-        <h1 class="font-bold text-[18px] mt-[5px] text-center">
-          HAPPY CLIENTS
-        </h1>
-        <p class="font-semibold leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
-          laboriosam minima
-        </p>
-      </div>
 
-      <div class="iconsdiv h-[100%] w-[215px] text-center">
-        <div
-          class="rounddiv shadown  flex justify-center items-center w-[170px] h-[170px] bg-[#f2f2f2] rounded-[50%] m-[auto]">
-          <img src="msg.png" alt="" />
+        <div class="text-center">
+            <div class="rounded-full bg-[#f2f2f2] w-36 h-36 lg:w-44 lg:h-44 mx-auto flex items-center justify-center shadow-lg">
+                <img src="msg.png" alt="Support" class="w-16 h-16 lg:w-20 lg:h-20" />
+            </div>
+            <h2 class="font-bold text-lg mt-4 mb-2">SUPPORT</h2>
+            <p class="font-semibold text-sm leading-tight text-[#b8bfcc]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
+                laboriosam minima
+            </p>
         </div>
-        <h1 class="font-bold text-[18px] mt-[5px] text-center">SUPPORT</h1>
-        <p class="font-semibold leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab at
-          laboriosam minima
-        </p>
-      </div>
     </div>
-  </div>
+</div>
   <!-- sec3 -->
 
-  <div class="aboutus w-[100%] h-[497px]" style="
-        background-image: url(sec3pic.jpeg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      ">
-    <div class="text-center">
-      <h1 class="text-[46px] font-bold text-[#668e18] mt-[20px] mr-[10px]">
-        <span class="text-black"> ABOUT</span> US
-      </h1>
-      <div class="perrdiv mt-[22px] ml-[81px] h-[243px] w-[518px] text-start">
-        <p class="text-[14px] font-semibold mb-[7px] leading-[15px]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-          quaerat quae assumenda, consequatur tenetur voluptatibus est vel wj
-          voluptatum aliquam perspiciatis
-        </p>
-        <br />
-        <p class="text-[14px] font-semibold mb-[7px] leading-[15px]">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
-          quaerat quae assumenda, consequatur tenetur voluptatibus jkl est
-          quaerat quae assumenda, consequatur tenetur voluptatibus est
-          voluptatum aliquam perspiciatis quos vel animi hggf hg quaerat quae
-          assumenda, consequatur tenetur voluptatibus
-        </p>
-        <br />
-
-        <p class="text-[14px] font-semibold mb-[7px] leading-[15px]">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-          quaerat quae assumenda, consequatur tenetur voluptatibus est harum
-          voluptates iure non deserunt illum doloremque, assumenda voluptatem
-          alias delectus velit sed praesentium voluptas sunt tempora amet
-          maiores iste laboriosam nesciunt impedit quae fugiat. Iure nesciunt
-          dolorum laboriosam placeat ipsam laudantium, fugiat rem suscipit?
-          Rem earum voluptas eveniet praesentium? Corporis.
-        </p>
+  
+      <div class="aboutus  w-full min-h-[497px] bg-center bg-no-repeat bg-cover relative px-4 sm:px-6 lg:px-8" style="
+          background-image: url(sec3pic.jpeg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        ">
+          <div class="text-center">
+              <h1 class="text-[36px] font-bold text-[#668e18] pt-5 sm:pt-[20px] sm:mr-[10px]">
+                  <span class="text-black"> ABOUT</span> US
+              </h1>
+              <p class="text-[#ccbeb8] text-center text-sm sm:text-base leading-tight sm:leading-[15px] mb-8 sm:mb-[39px] px-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br class="hidden sm:inline">
+                deleniti assumenda nesciunt, in accusamus delectus.
+            </p>
+              <div class="perrdiv mt-5 sm:mt-[22px] mx-auto sm:ml-[81px] h-auto sm:h-[243px] w-full sm:w-[518px] text-start">
+                  <p class="text-[14px] font-semibold mb-[7px] leading-[15px]">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                      quaerat quae assumenda, consequatur tenetur voluptatibus est vel wj
+                      voluptatum aliquam perspiciatis
+                  </p>
+                  <br />
+                  <p class="text-[14px] font-semibold mb-[7px] leading-[15px]">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+                      quaerat quae assumenda, consequatur tenetur voluptatibus jkl est
+                      quaerat quae assumenda, consequatur tenetur voluptatibus est
+                      voluptatum aliquam perspiciatis quos vel animi hggf hg quaerat quae
+                      assumenda, consequatur tenetur voluptatibus
+                  </p>
+                  <br />
+                  <p class="text-[14px] font-semibold mb-[7px] leading-[15px]">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                      quaerat quae assumenda, consequatur tenetur voluptatibus est harum
+                      voluptates iure non deserunt illum doloremque, assumenda voluptatem
+                      alias delectus velit sed praesentium voluptas sunt tempora amet
+                      maiores iste laboriosam nesciunt impedit quae fugiat. Iure nesciunt
+                      dolorum laboriosam placeat ipsam laudantium, fugiat rem suscipit?
+                      Rem earum voluptas eveniet praesentium? Corporis.
+                  </p>
+              </div>
+          </div>
+          <button
+              class="mt-8 sm:mt-[64px] mx-auto sm:ml-[84px] h-[45px] w-[194px] bg-[#fdb808] shadow-xl text-black font-bold border-solid border-b-[2px] rounded-[3px] border-[#dd8604] hover:bg-[#fe831d] block sm:inline-block">
+              READ MORE
+          </button>
       </div>
-    </div>
-    <button
-      class="mt-[64px] ml-[84px] h-[45px] w-[194px] bg-[#fdb808] shadow-xl text-black font-bold border-solid border-b-[2px] rounded-[3px] border-[#dd8604] hover:bg-[#fe831d]">
-      READ MORE
-    </button>
-  </div>
-
+  
   <!-- sec4 -->
-  <div class="servicesdiv w-[100%] h-[451px]  text-center ">
-    <div class="servicestopdiv ">
-      <h1 class="text-[46px] font-bold text-[#668e18] mr-[10px] mt-[2px]">
-        <span class="text-black"> OUR</span> SERVICES
-      </h1>
-      <p class="font-semibold leading-[16px] text-[#b8bfcc] mt-[10px] text-[18px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis <br>
-        nemo dignissimos, animi eligendi possimus nulla
-      </p>
+  <div class="servicesdiv w-full min-h-[451px] text-center px-4 py-8 sm:px-6 lg:px-8">
+    <div class="servicestopdiv">
+        <h1 class="text-3xl sm:text-4xl md:text-[46px] font-bold text-[#668e18] sm:mr-[10px] mt-2">
+            <span class="text-black">OUR</span> SERVICES
+        </h1>
+        <p class="font-semibold leading-tight sm:leading-[16px] text-[#b8bfcc] mt-[10px] text-base sm:text-[18px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis <br class="hidden sm:inline">
+            nemo dignissimos, animi eligendi possimus nulla
+        </p>
     </div>
-    <div class="servicesbotomdiv w-[100%] h-[244px] mt-[25px]  text-center flex items-center justify-evenly px-[65px] ">
-      <div
-        class="starcarddiv shadown h-[215px] w-[280px] mt-[24px] rounded-[8px]  bg-[#f2f2f2] relative flex flex-col justify-center">
-        <div
-          class="roundstar bg-[#febd19] absolute left-[100px] bottom-[175px] h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
-          <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+    <div class="servicesbotomdiv w-full mt-[25px] text-center flex flex-wrap justify-center gap-6 sm:gap-4 lg:gap-6">
+        <div class="starcarddiv shadow h-[215px] w-full sm:w-[280px] mt-[24px] rounded-[8px] bg-[#f2f2f2] relative flex flex-col justify-center px-4">
+            <div class="roundstar bg-[#febd19] absolute left-1/2 -translate-x-1/2 -top-10 h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
+                <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+            </div>
+            <h1 class="font-semibold text-[18px] mt-[20px]">WEB DESIGN</h1>
+            <p class="leading-[15px] mt-2 text-[#b8bfcc]">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Similique
+                tempora voluptate
+            </p>
+            <a href="#"><u class="text-[#9ccc5b]">
+                <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
+                    read more
+                </h3>
+            </u></a>
         </div>
 
-        <h1 class="font-semibold text-[18px] mt-[20px]">WEB DESIGN</h1>
-        <p class="leading-[15px] mt-[px] text-[#b8bfcc]">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Similique
-          tempora voluptate
-        </p>
-        <a href="#"><u class="text-[#9ccc5b]">
-            <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
-              read more
-            </h3>
-          </u></a>
-      </div>
-
-      <div
-        class="starcarddiv shadown h-[215px] w-[280px]  mt-[24px]  rounded-[8px]  bg-[#f2f2f2] relative flex flex-col justify-center">
-        <div
-          class="roundstar bg-[#febd19] absolute left-[100px] bottom-[175px] h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
-          <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+        <div class="starcarddiv shadow h-[215px] w-full sm:w-[280px] mt-[24px] rounded-[8px] bg-[#f2f2f2] relative flex flex-col justify-center px-4">
+            <div class="roundstar bg-[#febd19] absolute left-1/2 -translate-x-1/2 -top-10 h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
+                <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+            </div>
+            <h1 class="font-semibold text-[18px] mt-[20px]">GRAPHIC DESIGN</h1>
+            <p class="leading-[15px] mt-2 text-[#b8bfcc]">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Similique
+                tempora voluptate
+            </p>
+            <a href="#"><u class="text-[#9ccc5b]">
+                <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
+                    read more
+                </h3>
+            </u></a>
         </div>
 
-        <h1 class="font-semibold text-[18px] mt-[20px]">GRAPHIC DESIGN</h1>
-        <p class="leading-[15px] mt-[px] text-[#b8bfcc]">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Similique
-          tempora voluptate
-        </p>
-        <a href="#"><u class="text-[#9ccc5b]">
-            <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
-              read more
-            </h3>
-          </u></a>
-      </div>
-
-      <div
-        class="starcarddiv shadown h-[215px] w-[280px]  mt-[24px] ] rounded-[8px]  bg-[#f2f2f2] relative flex flex-col justify-center">
-        <div
-          class="roundstar bg-[#febd19] absolute left-[100px] bottom-[175px] h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
-          <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+        <div class="starcarddiv shadow h-[215px] w-full sm:w-[280px] mt-[24px] rounded-[8px] bg-[#f2f2f2] relative flex flex-col justify-center px-4">
+            <div class="roundstar bg-[#febd19] absolute left-1/2 -translate-x-1/2 -top-10 h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
+                <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+            </div>
+            <h1 class="font-semibold text-[18px] mt-[20px]">BRANDING</h1>
+            <p class="leading-[15px] mt-2 text-[#b8bfcc]">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Similique
+                tempora voluptate
+            </p>
+            <a href="#"><u class="text-[#9ccc5b]">
+                <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
+                    read more
+                </h3>
+            </u></a>
         </div>
 
-        <h1 class="font-semibold text-[18px] mt-[20px]">BRANDING</h1>
-        <p class="leading-[15px] mt-[px] text-[#b8bfcc]">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Similique
-          tempora voluptate
-        </p>
-        <a href="#"><u class="text-[#9ccc5b]">
-            <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
-              read more
-            </h3>
-          </u></a>
-      </div>
-
-      <div
-        class="starcarddiv shadown h-[215px] w-[280px]  mt-[24px]  rounded-[8px]  bg-[#f2f2f2] relative flex flex-col justify-center">
-        <div
-          class="roundstar bg-[#febd19] absolute left-[100px] bottom-[175px] h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
-          <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+        <div class="starcarddiv shadow h-[215px] w-full sm:w-[280px] mt-[24px] rounded-[8px] bg-[#f2f2f2] relative flex flex-col justify-center px-4">
+            <div class="roundstar bg-[#febd19] absolute left-1/2 -translate-x-1/2 -top-10 h-[78px] w-[78px] rounded-[50%] flex justify-center items-center">
+                <box-icon class="w-[45px] h-[45px]" name="star" type="solid" color="#ef4136"></box-icon>
+            </div>
+            <h1 class="font-semibold text-[18px] mt-[20px]">MARKETING</h1>
+            <p class="leading-[15px] mt-2 text-[#b8bfcc]">
+                Lorem ipsum dolor sit amet consect adipisicing elit. Similique
+                tempora voluptate
+            </p>
+            <a href="#"><u class="text-[#9ccc5b]">
+                <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
+                    read more
+                </h3>
+            </u></a>
         </div>
-
-        <h1 class="font-semibold text-[18px] mt-[20px]">MARKETING</h1>
-        <p class="leading-[15px] mt-[px] text-[#b8bfcc]">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Similique
-          tempora voluptate
-        </p>
-        <a href="#"><u class="text-[#9ccc5b]">
-            <h3 class="text-[#9ccc5b] font-semibold text-[20px] mt-[20px]">
-              read more
-            </h3>
-          </u></a>
-      </div>
     </div>
-  </div>
+</div>
   <!-- sec5 -->
+  <div class="lastsec bg-black min-h-[737px] w-full">
+    <!-- Header Section -->
+    <div class="portfoliotopdiv flex flex-col w-full py-6 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl sm:text-4xl md:text-[44px] font-bold text-[#668e18] text-center mt-6 sm:mt-[24px] sm:mr-[20px]">
+            <span class="text-white">OUR</span> PORTFOLIO
+        </h1>
+        <p class="text-[#b8bfcc] text-center leading-tight sm:leading-[15px] mt-4 sm:mt-[10px] text-sm sm:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br class="hidden sm:inline">
+            deleniti assumenda nesciunt, in accusamus delectus.
+        </p>
 
-  <div class="lastsec bg-black h-[737px] w-[100%]">
-    <div class="portfoliotopdiv flex flex-col  w-[100%] h-[200px] ]">
-      <h1 class="text-[44px] font-bold text-[#668e18] text-center mt-[24px] mr-[20px]">
-        <span class="text-white"> OUR</span> PORTFOLIO
-      </h1>
-      <p class="text-[#b8bfcc] text-center leading-[15px] mt-[10px]">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br>
-        deleniti assumenda nesciunt, in accusamus delectus.
-      </p>
-
-      <ul
-        class="lastdivul w-[100%] mt-[20px] text-white  text-center font-semibold  flex justify-center items-center gap-[22px] text-[20px]">
-        <li class="">
-          <a href="#">WEB DESIGN</a>
-        </li>
-
-        <li class="">
-          <a href="#">GRAPHIC DESIGN</a>
-        </li>
-
-        <li class="">
-          <a href="#">BRANDING</a>
-        </li>
-
-        <li class="">
-          <a href="#">LOGO</a>
-        </li>
-
-        <li class="">
-          <a href="#">MARKETING</a>
-        </li>
-
-        <li class="">
-          <a href="#">ADVERTISING</a>
-        </li>
-
-
-      </ul>
+        <!-- Navigation Links -->
+        <ul class="lastdivul w-full mt-6 sm:mt-[20px] text-white text-center font-semibold flex flex-wrap justify-center items-center gap-4 sm:gap-[22px] text-base sm:text-[20px]">
+            <li><a href="#" class="hover:text-[#668e18] transition-colors">WEB DESIGN</a></li>
+            <li><a href="#" class="hover:text-[#668e18] transition-colors">GRAPHIC DESIGN</a></li>
+            <li><a href="#" class="hover:text-[#668e18] transition-colors">BRANDING</a></li>
+            <li><a href="#" class="hover:text-[#668e18] transition-colors">LOGO</a></li>
+            <li><a href="#" class="hover:text-[#668e18] transition-colors">MARKETING</a></li>
+            <li><a href="#" class="hover:text-[#668e18] transition-colors">ADVERTISING</a></li>
+        </ul>
     </div>
 
-    <div class="mygrid">
-      <div class="cards bg-white     hover:bg-[#ef4136]"><img src="/horse.png" alt="" /></div>
-      <div class="cards bg-[#5e5e5e] hover:bg-[#ef4136]"> <img src="/social tree.png" alt="" /></div>
-      <div class="cards bg-[#d1d2d4] hover:bg-[#ef4136]"><img src="/creative brain.png" alt="" /></div>
-      <div class="cards bg-[#838383] hover:bg-[#ef4136]"><img src="/Team success.png" alt="" /></div>
-      <div class="cards bg-[#ffffff] hover:bg-[#ef4136]"><img src="/rhino.png" alt="" /></div>
-      <div class="cards bg-[#a3a3a3] hover:bg-[#ef4136]"><img src="/hands.png" alt="" /></div>
-      <div class="cards bg-[#d2d3d5] hover:bg-[#ef4136]"><img src="/brain.png" alt="" /></div>
-      <div class="cards bg-[#ffffff] hover:bg-[#ef4136]"><img src="/lion.png" alt="" /></div>
-      <div class="cards bg-[#9b9494] hover:bg-[#ef4136]"><img src="/growth.png" alt="" /></div>
-      <div class="cards bg-[#5e5e5e] hover:bg-[#ef4136]"><img src="/tag line.png" alt="" /></div>
-
+    <!-- Responsive Flex -->
+    <div class="myflex flex flex-wrap justify-center gap-2 sm:gap-4 p-4 sm:p-6">
+        <div class="cards bg-white hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/horse.png" alt="Horse" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#5e5e5e] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/social tree.png" alt="Social Tree" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#d1d2d4] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/creative brain.png" alt="Creative Brain" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#838383] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/Team success.png" alt="Team Success" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#ffffff] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/rhino.png" alt="Rhino" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#a3a3a3] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/hands.png" alt="Hands" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#d2d3d5] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/brain.png" alt="Brain" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#ffffff] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/lion.png" alt="Lion" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#9b9494] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/growth.png" alt="Growth" class="w-full h-full object-cover" />
+        </div>
+        <div class="cards bg-[#5e5e5e] hover:bg-[#ef4136] transition-colors aspect-square ">
+            <img src="/tag line.png" alt="Tag Line" class="w-full h-full object-cover" />
+        </div>
     </div>
-  </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
 
   <!-- Initialize Swiper -->
   <script>
@@ -525,466 +511,358 @@
         clickable: true,
       },
     });
-  </script>
+  </script> 
   <!-- sec-6 -->
-
-  <div class="processdiv  w-[100%] h-[460px]  bg-white">
-    <h1 class="text-[47px] font-bold text-[#668e18] mt-[60px] text-center ">
-      <span class="text-black"> OUR</span> PROCESS
+  <div class="processdiv w-full py-12 bg-white">
+    <h1 class="text-3xl sm:text-4xl md:text-[47px] font-bold text-[#668e18] mb-4 sm:mt-[60px] text-center">
+        <span class="text-black">OUR</span> PROCESS
     </h1>
-    <p class="text-[#ccbeb8] text-center leading-[15px] mb-[39px] ">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br>
-      deleniti assumenda nesciunt, in accusamus delectus.
+    <p class="text-[#ccbeb8] text-center text-sm sm:text-base leading-tight sm:leading-[15px] mb-8 sm:mb-[39px] px-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br class="hidden sm:inline">
+        deleniti assumenda nesciunt, in accusamus delectus.
     </p>
 
-    <div class=" w-[1182px] m-auto h-[247px]  gap-[47px] flex ">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center gap-8 sm:gap-[47px]">
+            <div class="icondiv w-full sm:w-[157px]">
+                <div class="circledivd mt-3 relative flex items-center justify-center w-36 h-36 sm:w-[144px] sm:h-[145px] rounded-full mx-auto border-4 border-[#d1d2d4]">
+                    <img src="./phone.png" alt="Phone icon" class="w-[100px] h-[100px] sm:w-auto sm:h-auto">
+                    <div class="countrountdiv font-bold text-lg sm:text-[20px] absolute -top-4 flex items-center justify-center h-8 w-8 sm:h-[35px] sm:w-[35px] bg-[#febd19] rounded-full">1</div>
+                </div>
+                <h2 class="font-semibold text-center text-base sm:text-[17px] mt-4 sm:mt-[15px]">REQUEST CALL</h2>
+                <p class="text-sm text-center leading-tight sm:leading-[15px] mt-2 sm:mt-[10px] text-[#b8bfcc]">
+                    Lorem ipsum, dolor sit amet consectetur
+                </p>
+            </div>
 
-      <div class=" icondiv w-[157px] h-[100%] ">
-        <div
-          class="circledivd   mt-[12px] relative flex  items-center   justify-center w-[144px] h-[145px] rounded-[50%] m-auto border-solid border-[4px] border-[#d1d2d4]">
-          <img src="./phone.png" alt="" class="">
+            <div class="icondiv w-full sm:w-[157px]">
+                <div class="circledivd mt-3 relative flex items-center justify-center w-36 h-36 sm:w-[144px] sm:h-[145px] rounded-full mx-auto border-4 border-[#d1d2d4]">
+                    <img src="./message.png" alt="Message icon" class="w-[100px] h-[100px] sm:w-auto sm:h-auto">
+                    <div class="countrountdiv font-bold text-lg sm:text-[20px] absolute -top-4 flex items-center justify-center h-8 w-8 sm:h-[35px] sm:w-[35px] bg-[#febd19] rounded-full">2</div>
+                </div>
+                <h2 class="font-semibold text-center text-base sm:text-[17px] mt-4 sm:mt-[15px]">CONSULTATION</h2>
+                <p class="text-sm text-center leading-tight sm:leading-[15px] mt-2 sm:mt-[10px] text-[#b8bfcc]">
+                    Lorem ipsum, dolor sit amet consectetur
+                </p>
+            </div>
 
-          <div
-            class="countrountdiv font-bold text-[20px] absolute top-[-19px] flex items-center justify-center m-auto h-[35px] w-[35px] bg-[#febd19] rounded-[50%]">
-            1</div>
+            <div class="icondiv w-full sm:w-[157px]">
+                <div class="circledivd mt-3 relative flex items-center justify-center w-36 h-36 sm:w-[144px] sm:h-[145px] rounded-full mx-auto border-4 border-[#d1d2d4]">
+                    <img src="./planing.png" alt="Planning icon" class="w-[100px] h-[100px] sm:w-auto sm:h-auto">
+                    <div class="countrountdiv font-bold text-lg sm:text-[20px] absolute -top-4 flex items-center justify-center h-8 w-8 sm:h-[35px] sm:w-[35px] bg-[#febd19] rounded-full">3</div>
+                </div>
+                <h2 class="font-semibold text-center text-base sm:text-[17px] mt-4 sm:mt-[15px]">PLANNING</h2>
+                <p class="text-sm text-center leading-tight sm:leading-[15px] mt-2 sm:mt-[10px] text-[#b8bfcc]">
+                    Lorem ipsum, dolor sit amet consectetur
+                </p>
+            </div>
 
+            <div class="icondiv w-full sm:w-[157px]">
+                <div class="circledivd mt-3 relative flex items-center justify-center w-36 h-36 sm:w-[144px] sm:h-[145px] rounded-full mx-auto border-4 border-[#d1d2d4]">
+                    <img src="./gear.png" alt="Gear icon" class="w-[100px] h-[100px] sm:w-auto sm:h-auto">
+                    <div class="countrountdiv font-bold text-lg sm:text-[20px] absolute -top-4 flex items-center justify-center h-8 w-8 sm:h-[35px] sm:w-[35px] bg-[#febd19] rounded-full">4</div>
+                </div>
+                <h2 class="font-semibold text-center text-base sm:text-[17px] mt-4 sm:mt-[15px]">WORK PROCESS</h2>
+                <p class="text-sm text-center leading-tight sm:leading-[15px] mt-2 sm:mt-[10px] text-[#b8bfcc]">
+                    Lorem ipsum, dolor sit amet consectetur
+                </p>
+            </div>
+
+            <div class="icondiv w-full sm:w-[157px]">
+                <div class="circledivd mt-3 relative flex items-center justify-center w-36 h-36 sm:w-[144px] sm:h-[145px] rounded-full mx-auto border-4 border-[#d1d2d4]">
+                    <img src="./pencil.png" alt="Pencil icon" class="w-[100px] h-[100px] sm:w-auto sm:h-auto">
+                    <div class="countrountdiv font-bold text-lg sm:text-[20px] absolute -top-4 flex items-center justify-center h-8 w-8 sm:h-[35px] sm:w-[35px] bg-[#febd19] rounded-full">5</div>
+                </div>
+                <h2 class="font-semibold text-center text-base sm:text-[17px] mt-4 sm:mt-[15px]">CORRECTING</h2>
+                <p class="text-sm text-center leading-tight sm:leading-[15px] mt-2 sm:mt-[10px] text-[#b8bfcc]">
+                    Lorem ipsum, dolor sit amet consectetur
+                </p>
+            </div>
+
+            <div class="icondiv w-full sm:w-[157px]">
+                <div class="mt-3 relative flex items-center justify-center w-36 h-36 sm:w-[144px] sm:h-[145px] rounded-full mx-auto border-4 border-[#d1d2d4]">
+                    <img src="./delivered.png" alt="Delivered icon" class="w-[100px] h-[100px] sm:w-auto sm:h-auto">
+                    <div class="countrountdiv font-bold text-lg sm:text-[20px] absolute -top-4 flex items-center justify-center h-8 w-8 sm:h-[35px] sm:w-[35px] bg-[#febd19] rounded-full">6</div>
+                </div>
+                <h2 class="font-semibold text-center text-base sm:text-[17px] mt-4 sm:mt-[15px]">DELIVER</h2>
+                <p class="text-sm text-center leading-tight sm:leading-[15px] mt-2 sm:mt-[10px] text-[#b8bfcc]">
+                    Lorem ipsum, dolor sit amet consectetur
+                </p>
+            </div>
         </div>
-
-        <h1 class="font-semibold text-center text-[17px] mt-[15px] ml-[20px] ">REQUAEST CALL</h1>
-        <p class="text-[14px] text-center leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur
-
-        </p>
-
-      </div>
-
-
-
-
-      <div class=" icondiv w-[157px] h-[100%] ">
-        <div
-          class="circledivd mt-[12px] flex  items-center relative  justify-center w-[144px] h-[145px] rounded-[50%] m-auto border-solid border-[4px] border-[#d1d2d4]">
-          <img src="./message.png" alt="">
-          <div
-            class="countrountdiv font-bold text-[20px] absolute top-[-19px] flex items-center justify-center m-auto h-[35px] w-[35px] bg-[#febd19] rounded-[50%]">
-            2</div>
-        </div>
-
-        <h1 class="font-semibold text-center text-[17px] mt-[15px] ml-[20px] ">CONSULTATION</h1>
-        <p class="text-[14px] text-center leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur
-
-        </p>
-
-      </div>
-
-      <div class=" icondiv w-[157px] h-[100%] ">
-        <div
-          class="circledivd mt-[12px] flex  items-center relative  justify-center w-[144px] h-[145px] rounded-[50%] m-auto border-solid border-[4px] border-[#d1d2d4]">
-          <img src="./planing.png" alt="">
-          <div
-            class="countrountdiv font-bold text-[20px] absolute top-[-19px] flex items-center justify-center m-auto h-[35px] w-[35px] bg-[#febd19] rounded-[50%]">
-            3</div>
-        </div>
-
-        <h1 class="font-semibold text-center text-[17px] mt-[15px] ml-[20px] ">PLANNING</h1>
-        <p class="text-[14px] text-center leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur
-
-        </p>
-
-      </div>
-
-      <div class=" icondiv w-[157px] h-[100%] ">
-        <div
-          class="circledivd mt-[12px] flex  items-center relative  justify-center w-[144px] h-[145px] rounded-[50%] m-auto border-solid border-[4px] border-[#d1d2d4]">
-          <img src="./gear.png" alt="">
-          <div
-            class="countrountdiv font-bold text-[20px] absolute top-[-19px] flex items-center justify-center m-auto h-[35px] w-[35px] bg-[#febd19] rounded-[50%]">
-            4</div>
-        </div>
-
-        <h1 class="font-semibold text-center text-[17px] mt-[15px] ml-[20px] ">WORK PROCESS</h1>
-        <p class="text-[14px] text-center leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur
-
-        </p>
-
-      </div>
-      <div class=" icondiv w-[157px] h-[100%] ">
-        <div
-          class="circledivd mt-[12px] flex  items-center relative  justify-center w-[144px] h-[145px] rounded-[50%] m-auto border-solid border-[4px] border-[#d1d2d4]">
-          <img src="./pencil.png" alt="">
-          <div
-            class="countrountdiv font-bold text-[20px] absolute top-[-19px] flex items-center justify-center m-auto h-[35px] w-[35px] bg-[#febd19] rounded-[50%]">
-            5</div>
-        </div>
-
-        <h1 class="font-semibold text-center text-[17px] mt-[15px] ml-[20px] ">CORRECTING</h1>
-        <p class="text-[14px] text-center leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur
-
-        </p>
-
-      </div>
-      <div class=" icondiv w-[157px] h-[100%] ">
-        <div
-          class="mt-[12px] flex  items-center relative  justify-center w-[144px] h-[145px] rounded-[50%] m-auto border-solid border-[4px] border-[#d1d2d4]">
-          <img src="./delivered.png" alt="">
-          <div
-            class="countrountdiv font-bold text-[20px] absolute top-[-19px] flex items-center justify-center m-auto h-[35px] w-[35px] bg-[#febd19] rounded-[50%]">
-            6</div>
-        </div>
-
-        <h1 class="font-semibold text-center text-[17px] mt-[15px] ml-[20px] ">DELIVER</h1>
-        <p class="text-[14px] text-center leading-[15px] mt-[10px] text-[#b8bfcc]">
-          Lorem ipsum, dolor sit amet consectetur
-
-        </p>
-
-      </div>
     </div>
-  </div>
-  </div>
-
+</div>
   <!-- sec7 -->
-
-  <div class="aboutdiv bg-[#f1f3f2] w-[100%] h-[500px]  ">
-    <h1 class="text-[47px] font-bold text-[#668e18] mt-[25px] text-center ">
-      <span class="text-black"> PEOPLE</span> ABOUT US
-    </h1>
-    <p class="text-[#ccbeb8] text-center leading-[15px] mb-[39px] ">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br>
-      deleniti assumenda nesciunt, in accusamus delectus.
-    </p>
-    <!--  -->
-    <div class="viewssdivs h-[300px] flex flex-wrap w-[1178px]  m-auto">
-
-      <div class="reviiews relative   w-[586px] h-[145px]
-
-border-r-[2px] border-solid border-[#c6cddf] border-b-[2px]">
-
-        <div class="profildivs h-[100px] w-[100px] ml-[5px]   rounded-[50%]     ">
-          <img src="./picture-profile.jpg" alt="" class="h-[100%] w-[100%] rounded-[50%]">
-        </div>
-
-
-
-        <div class="reviewrightdiv h-[100%] w-[400px] ml-[140px] absolute bottom-[1px] ">
-          <h1 class="text-[18px] font-bold mt-[15px] ">
-            JOHN DOE
-          </h1 class="text-[14px] text-black font-[600] ">
-          <pre class="leading-[16px] mt-[10px] text-[14px] text-[#1a1515] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing atih
+ <div class="aboutdiv bg-[#f1f3f2] w-full min-h-[500px] px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center">
+        <h1 class="text-[36px] font-bold text-[#668e18] pt-[25px] text-center">
+            <span class="text-black">PEOPLE</span> ABOUT US
+        </h1>
+        <p class="text-[#ccbeb8] text-center leading-[15px] mb-[39px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br class="hidden sm:inline">
+            deleniti assumenda nesciunt, in accusamus delectus.
+        </p>
+        
+        <div class="viewssdivs max-w-[1178px] mx-auto m-auto">
+            <div class="flex flex-wrap">
+                <div class="reviiews relative w-full md:w-[586px] min-h-[145px] border-b-[2px] md:border-r-[2px] border-solid border-[#c6cddf] p-4 md:p-0">
+                    <div class="profildivs h-[100px] w-[100px] ml-[5px] rounded-[50%] float-left mr-4 md:mr-0">
+                        <img src="./picture-profile.jpg" alt="" class="h-full w-full rounded-[50%] object-cover">
+                    </div>
+                    <div class="reviewrightdiv md:ml-[140px] md:pr-4">
+                        <h2 class="text-[18px] font-bold mt-[15px]">JOHN DOE</h2>
+                        <pre class="leading-[16px] mt-[10px] text-[10px] sm:text-[14px] text-[#1a1515] font-semibold whitespace-pre-wrap overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing atih
 Nemo iusto adipisci vitae Lorem ipsum dolor sit amet,  
 Nemo iusto adipisci vitae Lorem ipsum adipisicing .</pre>
-        </div>
+                    </div>
+                </div>
 
-      </div>
-
-      <div class="reviiews relative   w-[586px] h-[145px]
-
- border-solid border-[#c6cddf] border-b-[2px]">
-
-        <div class="profildivs h-[100px] w-[100px] ml-[5px]   rounded-[50%]     ">
-          <img src="./picture-profile.jpg" alt="" class="h-[100%] w-[100%] rounded-[50%]">
-        </div>
-
-
-
-        <div class="reviewrightdiv h-[100%] w-[400px] ml-[140px] absolute bottom-[1px] ">
-          <h1 class="text-[18px] font-bold mt-[15px] ">
-            JOHN DOE
-          </h1 class="text-[14px] text-black font-[600] ">
-          <pre class="leading-[16px] mt-[10px] text-[14px] text-[#1a1515] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing atih
+                <div class="reviiews relative w-full md:w-[586px] min-h-[145px] border-b-[2px] border-solid border-[#c6cddf] p-4 md:p-0">
+                    <div class="profildivs h-[100px] w-[100px] ml-[5px] rounded-[50%] float-left mr-4 md:mr-0">
+                        <img src="./picture-profile.jpg" alt="" class="h-full w-full rounded-[50%] object-cover">
+                    </div>
+                    <div class="reviewrightdiv md:ml-[140px] md:pr-4">
+                        <h2 class="text-[18px] font-bold mt-[15px]">JOHN DOE</h2>
+                        <pre class="leading-[16px] mt-[10px] text-[10px] sm:text-[14px] text-[#1a1515] font-semibold whitespace-pre-wrap overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing atih
 Nemo iusto adipisci vitae Lorem ipsum dolor sit amet,  
 Nemo iusto adipisci vitae Lorem ipsum adipisicing .</pre>
-        </div>
+                    </div>
+                </div>
 
-      </div>
-
-      <div class="reviiews relative   w-[586px] h-[150px]
-
- border-solid border-[#c6cddf] border-r-[2px]">
-
-        <div class="profildivs h-[100px] w-[100px] ml-[5px]   rounded-[50%]     ">
-          <img src="./picture-profile.jpg" alt="" class="h-[100%] w-[100%] rounded-[50%]">
-        </div>
-
-
-
-        <div class="reviewrightdiv h-[100%] w-[400px] ml-[140px] absolute bottom-[1px] ">
-          <h1 class="text-[18px] font-bold mt-[15px] ">
-            JOHN DOE
-          </h1 class="text-[14px] text-black font-[600] ">
-          <pre class="leading-[16px] mt-[10px] text-[14px] text-[#1a1515] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing atih
+                <div class="reviiews relative w-full md:w-[586px] min-h-[150px] md:border-r-[2px] border-solid border-[#c6cddf] p-4 md:p-0">
+                    <div class="profildivs h-[100px] w-[100px] ml-[5px] rounded-[50%] float-left mr-4 md:mr-0">
+                        <img src="./picture-profile.jpg" alt="" class="h-full w-full rounded-[50%] object-cover">
+                    </div>
+                    <div class="reviewrightdiv md:ml-[140px] md:pr-4">
+                        <h2 class="text-[18px] font-bold mt-[15px]">JOHN DOE</h2>
+                        <pre class="leading-[16px] mt-[10px] text-[10px] sm:text-[14px] text-[#1a1515] font-semibold whitespace-pre-wrap overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing atih
 Nemo iusto adipisci vitae Lorem ipsum dolor sit amet,  
 Nemo iusto adipisci vitae Lorem ipsum adipisicing .</pre>
-        </div>
+                    </div>
+                </div>
 
-      </div>
-
-
-      <div class="reviiews relative   w-[586px] h-[145px]">
-
-        <div class="profildivs h-[100px] w-[100px] ml-[5px]   rounded-[50%]     ">
-          <img src="./picture-profile.jpg" alt="" class="h-[100%] w-[100%] rounded-[50%]">
-        </div>
-
-
-
-        <div class="reviewrightdiv h-[100%] w-[400px] ml-[140px] absolute bottom-[1px] ">
-          <h1 class="text-[18px] font-bold mt-[15px] ">
-            JOHN DOE
-          </h1 class="text-[14px] text-black font-[600] ">
-          <pre class="leading-[16px] mt-[10px] text-[14px] text-[#1a1515] font-semibold">Lorem ipsum dolor sit amet, consectetur adipisicing atih
+                <div class="reviiews relative w-full md:w-[586px] min-h-[145px] p-4 md:p-0">
+                    <div class="profildivs h-[100px] w-[100px] ml-[5px] rounded-[50%] float-left mr-4 md:mr-0">
+                        <img src="./picture-profile.jpg" alt="" class="h-full w-full rounded-[50%] object-cover">
+                    </div>
+                    <div class="reviewrightdiv md:ml-[140px] md:pr-4">
+                        <h2 class="text-[18px] font-bold mt-[15px]">JOHN DOE</h2>
+                        <pre class="leading-[16px] mt-[10px] text-[10px] sm:text-[14px] text-[#1a1515] font-semibold whitespace-pre-wrap overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing atih
 Nemo iusto adipisci vitae Lorem ipsum dolor sit amet,  
 Nemo iusto adipisci vitae Lorem ipsum adipisicing .</pre>
+                    </div>
+                </div>
+            </div>
         </div>
-
-      </div>
-
     </div>
-
-  </div>
 
   <!-- sec 8 -->
 
-  <div class="skilsec  bg-white  w-[100%] h-[489px] text-center">
-    <h1 class="text-[48px] font-bold text-[#668e18] mt-[24px] mr-[12px] text-center ">
-      <span class="text-black"> OUR</span> SKILLS
+  <div class="skilsec bg-white w-full min-h-[489px] text-center px-4 py-8 sm:px-6 lg:px-8">
+    <h1 class="text-4xl sm:text-[48px] mb-4 font-bold text-[#668e18] mt-6 sm:mt-[24px] sm:mr-[12px] text-center">
+        <span class="text-black">OUR</span> SKILLS
     </h1>
-    <p class="text-[#ccbeb8] text-center leading-[15px] mb-[39px]  ">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br>
-      deleniti assumenda nesciunt, in accusamus delectus.
+    <p class="text-[#ccbeb8] text-center leading-[15px] mb-8 sm:mb-[39px]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br class="hidden sm:inline">
+        deleniti assumenda nesciunt, in accusamus delectus.
     </p>
 
-    <div class="cicleprograssdiv w-[975px] mt-[40px] h-[255px] m-auto  flex gap-[70px] ">
-      <div class="prograsscard h-[100%] text-center w-[190px] ">
-        <div
-          class="bordercircls h-[172px] w-[172px] mt-[20px] ml-[15px] border-solid border-[4px] border-[#fe841e] rounded-[50%] flex  justify-center items-center relative">
-          <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center  rounded-[50%] absolute "
-            style="background: conic-gradient(transparent 0% , transparent 56% , #febd19 56% , #febd19 100%);">
-            <div
-              class="innerbordercircle w-[130px] h-[130px] bg-[white] rounded-[50%] flex text-[#fe841e] items-center justify-center text-[34px] pl-[15px] font-[800]">
-              45%</div>
-
-          </div>
+    <div class="cicleprograssdiv max-w-[975px] mt-8 sm:mt-[40px] mx-auto flex flex-wrap justify-center gap-8 sm:gap-[70px]">
+        <div class="prograsscard h-full text-center w-full sm:w-[190px] mb-8 sm:mb-0">
+            <div class="bordercircls h-[172px] w-[172px] mt-[20px] mx-auto border-solid border-[4px] border-[#fe841e] rounded-[50%] flex justify-center items-center relative">
+                <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center rounded-[50%] absolute"
+                    style="background: conic-gradient(transparent 0%, transparent 56%, #febd19 56%, #febd19 100%);">
+                    <div class="innerbordercircle w-[130px] h-[130px] bg-white rounded-[50%] flex text-[#fe841e] items-center justify-center text-[34px] pl-[15px] font-[800]">
+                        45%
+                    </div>
+                </div>
+            </div>
+            <h2 class="font-[600] text-[18px] mt-[34px]">MARKETING</h2>
         </div>
 
-        <h1 class="font-[600] text-[18px] mt-[34px]">
-          MARKETING
-        </h1>
-      </div>
-      <!-- 2 -->
-      <div class="prograsscard h-[100%] text-center w-[190px]  ">
-        <div
-          class="bordercircls h-[172px] w-[172px] mt-[20px] ml-[15px] border-solid border-[4px] border-[#ed7c76] rounded-[50%] flex  justify-center items-center relative">
-          <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center  rounded-[50%] absolute "
-            style="background: conic-gradient(transparent 0% , transparent 33% , #ef4136 33% , #ef4136 100%);">
-            <div
-              class="innerbordercircle w-[130px] h-[130px] bg-[white] rounded-[50%] flex text-[#ef4136] items-center justify-center text-[34px]  font-[800]">
-              60%</div>
-
-          </div>
+        <div class="prograsscard h-full text-center w-full sm:w-[190px] mb-8 sm:mb-0">
+            <div class="bordercircls h-[172px] w-[172px] mt-[20px] mx-auto border-solid border-[4px] border-[#ed7c76] rounded-[50%] flex justify-center items-center relative">
+                <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center rounded-[50%] absolute"
+                    style="background: conic-gradient(transparent 0%, transparent 33%, #ef4136 33%, #ef4136 100%);">
+                    <div class="innerbordercircle w-[130px] h-[130px] bg-white rounded-[50%] flex text-[#ef4136] items-center justify-center text-[34px] font-[800]">
+                        60%
+                    </div>
+                </div>
+            </div>
+            <h2 class="font-[600] text-[18px] mt-[34px]">SEO & ADS</h2>
         </div>
 
-        <h1 class="font-[600] text-[18px] mt-[34px]">
-          SEO & ADS
-        </h1>
-      </div>
-      <!-- 3 -->
-      <div class="prograsscard h-[100%] text-center w-[190px]  ">
-        <div
-          class="bordercircls h-[172px] w-[172px] mt-[20px] ml-[15px] border-solid border-[4px] border-[#668f18] rounded-[50%] flex  justify-center items-center relative">
-          <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center  rounded-[50%] absolute "
-            style="background: conic-gradient(transparent 0% , transparent 24% , #8ec63f 24% , #8ec63f 100%);">
-            <div
-              class="innerbordercircle w-[130px] h-[130px] bg-[white] rounded-[50%] flex text-[#668f18] items-center justify-center text-[34px]  font-[800]">
-              75%</div>
-
-          </div>
+        <div class="prograsscard h-full text-center w-full sm:w-[190px] mb-8 sm:mb-0">
+            <div class="bordercircls h-[172px] w-[172px] mt-[20px] mx-auto border-solid border-[4px] border-[#668f18] rounded-[50%] flex justify-center items-center relative">
+                <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center rounded-[50%] absolute"
+                    style="background: conic-gradient(transparent 0%, transparent 24%, #8ec63f 24%, #8ec63f 100%);">
+                    <div class="innerbordercircle w-[130px] h-[130px] bg-white rounded-[50%] flex text-[#668f18] items-center justify-center text-[34px] font-[800]">
+                        75%
+                    </div>
+                </div>
+            </div>
+            <h2 class="font-[600] text-[18px] mt-[34px]">BRANDING</h2>
         </div>
 
-        <h1 class="font-[600] text-[18px] mt-[34px]">
-          BRANDING
-        </h1>
-      </div>
-
-      <div class="prograsscard h-[100%] text-center w-[190px]  ">
-        <div
-          class="bordercircls h-[172px] w-[172px] mt-[20px] ml-[15px] border-solid border-[4px] border-[#d2d3d5] rounded-[50%] flex  justify-center items-center relative">
-          <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center  rounded-[50%] absolute "
-            style="background: conic-gradient(transparent 0% , transparent 11% , #212121 11% , #212121 100%);">
-            <div
-              class="innerbordercircle w-[130px] h-[130px] bg-[white] rounded-[50%] flex text-[#212121] items-center justify-center text-[34px]  font-[800]">
-              80%</div>
-
-          </div>
+        <div class="prograsscard h-full text-center w-full sm:w-[190px] mb-8 sm:mb-0">
+            <div class="bordercircls h-[172px] w-[172px] mt-[20px] mx-auto border-solid border-[4px] border-[#d2d3d5] rounded-[50%] flex justify-center items-center relative">
+                <div class="topbordercircle h-[200px] w-[200px] flex items-center justify-center rounded-[50%] absolute"
+                    style="background: conic-gradient(transparent 0%, transparent 11%, #212121 11%, #212121 100%);">
+                    <div class="innerbordercircle w-[130px] h-[130px] bg-white rounded-[50%] flex text-[#212121] items-center justify-center text-[34px] font-[800]">
+                        80%
+                    </div>
+                </div>
+            </div>
+            <h2 class="font-[600] text-[18px] mt-[34px]">WEB DESIGN</h2>
         </div>
-
-        <h1 class="font-[600] text-[18px] mt-[34px]">
-          WEB DESIGN
-        </h1>
-      </div>
-
     </div>
+</div>
 
-  </div>
+   <!-- 9 --> 
 
-  <!-- 9 -->
-
-
-  <div class="contactdiv w-[100%] h-[320px] bg-[#8ec63f]  text-center ">
-    <h1 class="text-[67px] mt-[4px] text-white font-[700]">START YOUR NEW PROJECT</h1>
-    <div class="contactinputdiv w-[1026px] h-[67px] mt-[22px] text-left flex gap-[24px]   m-auto">
-      <input type="text" placeholder="YOUR NAME"
-        class="h-[48px] w-[245px] pl-[12px] text-[20px]  rounded-[8px] ">
-      <input type="text" placeholder="YOUR EMAIL"
-        class="h-[48px] w-[245px] pl-[12px] text-[20px] border-none rounded-[8px]">
-      <input type="text" placeholder="YOUR PHONE"
-        class="h-[48px] w-[245px] pl-[12px] text-[20px] border-none rounded-[8px]">
-      <button
-        class=" h-[49px] w-[194px] bg-[#fdb808] text-[18px] shadow-xl text-black font-bold  border-solid border-b-[2px] rounded-[3px] border-[#dd8604] hover:bg-[#fe831d] ml-[10px]">
-        SEND REQUAEST
-      </button>
+ 
+   <div class="contactdiv w-full min-h-[320px] bg-[#8ec63f] text-center px-4 py-8 sm:px-6 lg:px-8">
+    <h1 class="text-4xl sm:text-5xl lg:text-[67px] mt-1 sm:mt-[4px] text-white font-bold">START YOUR NEW PROJECT</h1>
+    <div class="contactinputdiv w-full max-w-[1026px] mt-4 sm:mt-[22px] text-left flex flex-col sm:flex-row gap-4 sm:gap-[24px] mx-auto">
+        <input type="text" placeholder="YOUR NAME"
+            class="h-12 sm:h-[48px] w-full sm:w-[245px] pl-3 sm:pl-[12px] text-base sm:text-[20px] rounded-[8px]">
+        <input type="text" placeholder="YOUR EMAIL"
+            class="h-12 sm:h-[48px] w-full sm:w-[245px] pl-3 sm:pl-[12px] text-base sm:text-[20px] border-none rounded-[8px]">
+        <input type="text" placeholder="YOUR PHONE"
+            class="h-12 sm:h-[48px] w-full sm:w-[245px] pl-3 sm:pl-[12px] text-base sm:text-[20px] border-none rounded-[8px]">
+        <button
+            class="h-12 sm:h-[49px] w-full sm:w-[194px] bg-[#fdb808] text-base sm:text-[18px] shadow-xl text-black font-bold border-solid border-b-[2px] rounded-[3px] border-[#dd8604] hover:bg-[#fe831d] mt-4 sm:mt-0 sm:ml-[10px]">
+            SEND REQUEST
+        </button>
     </div>
-    <p class="text-[white] text-center leading-[15px] mt-[24px]  font-semibold ">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean nt, in accusamus delectu<br>
-      deleniti assumenda nesciunt
+    <p class="text-white text-center leading-tight sm:leading-[15px] mt-6 sm:mt-[24px] font-semibold text-sm sm:text-base">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean nt, in accusamus delectu<br class="hidden sm:inline">
+        deleniti assumenda nesciunt
     </p>
-
-  </div>
+</div>
 
   <!-- 10 -->
-
-  <div class="contacusdiv h-[642px] w-[100%]  border-solid border-transparent border-[2px] bg-white ">
-    <h1 class="text-[48px] font-bold text-[#668e18] mt-[20px]  text-center ">
-      <span class="text-black"> OUR</span> CONTACTS
+  <div class="contacusdiv min-h-[642px]  w-full border-solid border-transparent border-[2px] bg-white px-4 py-8 sm:px-6 lg:px-8">
+    <h1 class="text-3xl mb-4 sm:text-4xl lg:text-[48px] font-bold text-[#668e18] mt-5 sm:mt-[20px] text-center">
+        <span class="text-black">OUR</span> CONTACTS
     </h1>
-    <p class="text-[#ccbeb8] text-center leading-[15px] mb-[20px]  ">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br>
-      deleniti assumenda nesciunt, in accusamus delectus.
+    <p class="text-[#ccbeb8] text-center leading-tight sm:leading-[15px] mb-5 sm:mb-[20px]">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet the mean<br class="hidden sm:inline">
+        deleniti assumenda nesciunt, in accusamus delectus.
     </p>
 
-    <div class="maph1 flex items-center justify-center h-[37px]   w-[1000px] text-center ml-[165px]">
-      <box-icon name='map' type='solid' color='#678e19' size='32px'></box-icon>
-      <p class="text-[black] text-center leading-[15px] text-[24px] ">
-        Lorem ipsum dolor sit atmd, consectetur adipisicing elit. Eveniet the mean kagk sit amet<br>
-      </p>
+    <div class="maph1 flex flex-col sm:flex-row items-center justify-center text-center mx-auto max-w-[1000px] mb-4 sm:mb-0">
+        <box-icon name='map' type='solid' color='#678e19' size='32px'></box-icon>
+        <p class="text-black text-center leading-tight sm:leading-[15px] text-lg sm:text-2xl mt-2 sm:mt-0 sm:ml-2">
+            Lorem ipsum dolor sit atmd, consectetur adipisicing elit. Eveniet the mean kagk sit amet
+        </p>
     </div>
 
-    <div class="mapphondiv flex text-center items-center h-[42px] w-[825px] m-auto ">
-      <box-icon name='phone' type='solid' rotate='270' color='#668e18' size='32px'></box-icon>
-
-      <p class="text-[24px]  ">(304)386-6719</p>
-
-      <box-icon name='phone' type='solid' rotate='270' color='#668e18' size='32px' class="ml-[80px]"></box-icon>
-      <p class="text-[24px]  ">(317)011-3001</p>
-
-      <box-icon type='solid' name='envelope' color='#668e18' size='32px' class="ml-[70px]"></box-icon>
-      <p class="text-[24px]  ">info@website.com</p>
-
-
+    <div class="mapphondiv flex flex-col sm:flex-row text-center items-center justify-center sm:justify-between max-w-[825px] mx-auto mt-4 sm:mt-0">
+        <div class="flex items-center mb-2 sm:mb-0">
+            <box-icon name='phone' type='solid' rotate='270' color='#668e18' size='32px'></box-icon>
+            <p class="text-lg sm:text-2xl ml-2">(304)386-6719</p>
+        </div>
+        <div class="flex items-center mb-2 sm:mb-0">
+            <box-icon name='phone' type='solid' rotate='270' color='#668e18' size='32px'></box-icon>
+            <p class="text-lg sm:text-2xl ml-2">(317)011-3001</p>
+        </div>
+        <div class="flex items-center">
+            <box-icon type='solid' name='envelope' color='#668e18' size='32px'></box-icon>
+            <p class="text-lg sm:text-2xl ml-2">info@website.com</p>
+        </div>
     </div>
 
-    <div class="mymap h-[417px] w-[100%] ">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.4723651394006!2d67.0457450739136!3d24.813514747137216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c5361ff85a5%3A0x2401821560d53462!2sPanacloud%20Pvt.%20Ltd.%20Pakistan!5e0!3m2!1sen!2s!4v1730142115418!5m2!1sen!2s"
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="mymap h-[417px] w-full mt-8">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.4723651394006!2d67.0457450739136!3d24.813514747137216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33c5361ff85a5%3A0x2401821560d53462!2sPanacloud%20Pvt.%20Ltd.%20Pakistan!5e0!3m2!1sen!2s!4v1730142115418!5m2!1sen!2s"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+</div>
+
+<!-- 11 -->
+<footer class="w-full flex flex-wrap lg:flex-nowrap h-auto lg:h-[365px] pt-[54px] bg-[#678e19]">
+  <!-- First Section -->
+  <div class="firstdiv w-full lg:w-[240px] h-auto lg:h-[300px] px-4 lg:ml-[87px] text-center lg:text-left">
+    <img src="panacloud_logo.png" alt="" class="w-[150px] mx-auto lg:mx-0">
+    <p class="mt-[13px] text-white text-[14px] font-[600] leading-[16px] text-wrap">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nihil neque quod porro pariatur cupiditate
+      repellat voluptate quisquam perspiciatis
+    </p>
+    <p class="mt-[30px] lg:mt-[70px] text-white text-[22px] font-[600]">panacloud 2019</p>
   </div>
 
+  <!-- Services Section -->
+  <div
+    class="footer2div w-full lg:w-[212px] h-auto lg:h-[251px] mt-8 lg:mt-0 lg:ml-[116px] lg:border-r-[2px] border-[#9dd642] border-l-none border-solid flex flex-col text-center lg:text-left">
+    <h1 class="text-[22px] lg:text-[26px] text-white font-bold mb-[12px]">SERVICES</h1>
+    <ul class="flex flex-col gap-[7px]">
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem ipsum.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
+    </ul>
+  </div>
 
-  <footer class="w-[100%] flex  h-[365px]  pt-[54px] bg-[#678e19]  ">
-    <div class="firstdiv w-[240px]  h-[300px]  ml-[87px] ">
+  <!-- Useful Links Section -->
+  <div
+    class="footer2div w-full lg:w-[255px] h-auto lg:h-[251px] mt-8 lg:mt-0 lg:ml-[45px] lg:border-r-[2px] border-[#9dd642] border-solid flex flex-col text-center lg:text-left">
+    <h1 class="text-[22px] lg:text-[26px] text-white font-bold mb-[12px]">USEFUL LINKS</h1>
+    <ul class="flex flex-col gap-[7px]">
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem</u>.</a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
+      <li class="font-semibold text-white list-none"><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
+    </ul>
+  </div>
 
-      <img src="panacloud_logo.png" alt="" class="w-[150px]">
-
-      <p class="mt-[13px] text-white text-[14px] font-[600] leading-[16px] text-wrap ">Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Dolorum nihil neque quod porro pariatur cupiditate repellat voluptate quisquam
-        perspiciatis </p>
-
-
-      <p class="mt-[70px] ml-[1px] text-white text-[22px] font-[600]"> panacloud 2019</p>
-    </div>
-
-    <div
-      class="footer2div w-[212px] h-[251px] ml-[116px] border-r-[2px] border-[#9dd642] border-l-none border-solid  flex flex-col ">
-   
-      <h1 class="mt-[-10px] text-[26px] text-white font-bold mb-[12px]">SERVICES</h1>
-      <ul class="flex flex-col gap-[7px] ">
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem ipsum.</u></a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem</u></a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum.</u> </a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem</u></a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
-
-      </ul>
-
-    </div>
-
-    <div class="footer2div w-[255px] h-[251px] ml-[45px]  border-r-[2px] border-[#9dd642] border-solid  flex flex-col ">
-     
-      <h1 class="mt-[-10px] text-[26px] text-white font-bold mb-[12px]">USEFUL LINKS</h1>
-      <ul class="flex flex-col gap-[7px] ">
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum.</u> </a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem</u>.</a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum.</u> </a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem</u>/a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
-        <li class=" ml-[2px] font-semibold text-white inline-block list-none "><a href="#"><u>Lorem, ipsum Dolor.</u></a></li>
-
-      </ul>
-
-    </div>
-
-
-    <div
-      class="footer2div w-[212px] h-[251px] ml-[79px] flex flex-col row-[25px] gap-[8px] text-center">
-      <!-- border-r-[2px] border-solid border-[#] -->
-      <h1 class="mt-[-10px] text-[26px] text-white font-bold ">CONTACT</h1>
-      <p class="text-[18px]  font-semibold text-white"> <box-icon name='phone' type='solid' rotate='270' color='white'
-          size='20px' class="mt-[10px]"></box-icon> +9232386-6719</p>
-
-
-      <p class="text-[18px] font-semibold  text-white"> <box-icon name='phone' type='solid' rotate='270' color='white'
-          size='20px'></box-icon> +9232386-6719</p>
-
-
-      <p class="text-[18px] font-semibold   text-white"> <box-icon type='solid' name='envelope' color='white'
-          size='20px'></box-icon> info@website.com</p>
-
-      <h1 class="mt-[30px] text-[26px] text-white font-bold ">FOLLOW US</h1>
-
-      <div class="h-[30px] w-[100%] flex items-center justify-center gap-[8px] m-auto mt-[2px] ">
-        <div
-          class="text-[#678e19] bg-[#303030] font-bold h-[100%] w-[30px] rounded-[50%] flex items-center justify-center">
-          f</div>
-        <div
-          class="text-[#678e19] bg-[#303030] h-[100%] w-[30px] font-semibold rounded-[50%] flex items-center justify-center">
-          tw</div>
-        <div
-          class="text-[#678e19] bg-[#303030]  h-[100%] w-[30px] font-semibold rounded-[50%] flex items-center justify-center ">
-          g+</div>
-        <div
-          class="text-[#678e19] bg-[#303030] font-bold h-[100%] w-[30px] rounded-[50%] flex items-center justify-center">
-          in</div>
-        <div
-          class="text-[#678e19] text-[10px] font-semibold bg-[#303030]  h-[100%] w-[30px] rounded-[50%] flex items-center justify-center">
-          Tube</div>
-
-
-
+  <!-- Contact Section -->
+  <div class="footer2div w-full lg:w-[212px] h-auto mt-8 lg:mt-0 lg:ml-[79px] text-center lg:text-left">
+    <h1 class="text-[22px] lg:text-[26px] text-white font-bold">CONTACT</h1>
+    <p class="text-[18px] font-semibold text-white">
+      <box-icon name='phone' type='solid' rotate='270' color='white' size='20px'></box-icon>
+      +9232386-6719
+    </p>
+    <p class="text-[18px] font-semibold text-white">
+      <box-icon name='phone' type='solid' rotate='270' color='white' size='20px'></box-icon>
+      +9232386-6719
+    </p>
+    <p class="text-[18px] font-semibold text-white">
+      <box-icon type='solid' name='envelope' color='white' size='20px'></box-icon>
+      info@website.com
+    </p>
+    <h1 class="mt-[20px] text-[22px] lg:text-[26px] text-white font-bold">FOLLOW US</h1>
+    <div class="flex items-center justify-center gap-[8px] mt-[10px]">
+      <div
+        class="text-[#678e19] bg-[#303030] font-bold h-[30px] w-[30px] rounded-full flex items-center justify-center">
+        f
       </div>
-
+      <div
+        class="text-[#678e19] bg-[#303030] font-semibold h-[30px] w-[30px] rounded-full flex items-center justify-center">
+        tw
+      </div>
+      <div
+        class="text-[#678e19] bg-[#303030] font-semibold h-[30px] w-[30px] rounded-full flex items-center justify-center">
+        g+
+      </div>
+      <div
+        class="text-[#678e19] bg-[#303030] font-bold h-[30px] w-[30px] rounded-full flex items-center justify-center">
+        in
+      </div>
+      <div
+        class="text-[#678e19] bg-[#303030] font-semibold text-[10px] h-[30px] w-[30px] rounded-full flex items-center justify-center">
+        Tube
+      </div>
     </div>
+  </div>
+</footer>
 
-
-  </footer>
 
 
 </body>
